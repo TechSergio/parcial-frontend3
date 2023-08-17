@@ -1,8 +1,15 @@
 import React from "react";
+import './Card.css'
 
 
-const Card = ({dato}) => {
-    return <div>Hola, soy una tarjeta, {dato}</div>;
+const Card = ({estudiante}) => {
+    return <div className='card'>
+                <h3 className='card-title'>Se registro el estudiante:</h3>
+                <div className='card-content'>
+                <p>Nombre: {estudiante.nombre}</p>
+                <p>Apellido: {estudiante.apellido}</p>
+                </div>
+            </div>;
 };
 
 
